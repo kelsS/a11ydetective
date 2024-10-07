@@ -30,6 +30,7 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 - 11ty
 - HTML
 - Nunjucks
+- Markdown
 - CSS
 - JS
 - Code bundler
