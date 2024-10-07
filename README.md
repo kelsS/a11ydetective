@@ -1,5 +1,13 @@
 # a11ydetective
 
+Hey howdy hey, dear reader. Welcome to a blog all about Web Accessibility. Take note that the word accessibility is often shortened to a11y. A11y is a [numeronym](https://www.a11yproject.com/posts/a11y-and-other-numeronyms/).
+
+What is web a11y you might ask?
+
+Web a11y is all about making sites and applications usable to as many people as possible no matter how they are differently abled. This noble pursuit involves automated testing, manual testing, and lots of collaboration!
+
+In this blog you will find helpful tips, tricks, gotchas, and other examples of how to make a website or web application accessible for all!
+
 ## File structure
 
 - `.nojekyll`: *tells github pages to NOT use jekyll since this project will be using 11ty instead*
