@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A blog all about web a11y",
   "main": "index.js",
+  "build": "eleventy",
   "repository": "git@github.com:kelsS/a11ydetective.git",
   "author": "kelsS <ratherkelsey@gmail.com>",
   "license": "MIT"
