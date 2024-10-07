@@ -36,8 +36,6 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 
 ## File structure
 
-- `.nojekyll`: *tells github pages to NOT use jekyll since this project will be using 11ty instead*
-
 ```md
 /project root/ -> /a11ydetective/
 |
@@ -55,7 +53,7 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |  |-- `script.js`
 |  |-- `style.css`
 |
-|-- `.nojekyll`
+|-- `.nojekyll` - Tells Github pages to NOT use Jekyll since this project will be using 11ty instead
 |-- /.github/workflows/`11ty_build.yml` - Github Pages deploy yaml file
 |-- `.eleventy.js` - 11ty config file
 |-- `.nvmrc` - Contains node version for the project that will be used when you run `nvm use`
