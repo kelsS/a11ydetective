@@ -4,10 +4,10 @@
   "description": "A blog all about web a11y",
   "main": "index.js",
 	"scripts": {
-		"build": "yarn dlx @11ty/eleventy",
-		"start": "yarn dlx @11ty/eleventy --serve",
-    "watch": "yarn dlx @11ty/eleventy --watch",
-    "dryrun": "yarn dlx @11ty/eleventy --dryrun"
+		"build": "yarn exec eleventy",
+		"start": "yarn exec eleventy --serve",
+    "watch": "yarn exec eleventy --watch",
+    "dryrun": "yarn exec eleventy --dryrun"
 	},
   "repository": "git@github.com:kelsS/a11ydetective.git",
   "author": "kelsS <ratherkelsey@gmail.com>",

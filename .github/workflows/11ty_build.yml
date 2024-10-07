@@ -25,7 +25,7 @@ jobs:
           yarn install --frozen-lockfile
 
       - name: Run build script
-        run: yarn dlx @11ty/eleventy
+        run: yarn exec eleventy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
