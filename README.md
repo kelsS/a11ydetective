@@ -56,11 +56,11 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |  |-- `style.css`
 |
 |-- `.nojekyll`
-|-- /.github/workflows/`11ty_build.yml` (Github Pages deploy yaml file)
-|-- `.eleventy.js` (11ty config file)
-|-- `.nvmrc` (contains node version for the project that will be used when you run `nvm use`)
-|-- `.gitignore`
-|-- `package.json`
-|-- `package-lock.json`
-|-- `README.md`
+|-- /.github/workflows/`11ty_build.yml` - Github Pages deploy yaml file
+|-- `.eleventy.js` - 11ty config file
+|-- `.nvmrc` - Contains node version for the project that will be used when you run `nvm use`
+|-- `.gitignore` - Used to hide things from git so they are not commited to the remote repo
+|-- `package.json` - Contains information about the project such as node dependencies, build scripts, etc...
+|-- `package-lock.json` - Lockfile for package.json
+|-- `README.md` - Documentation for how to work within the repo
 ```
