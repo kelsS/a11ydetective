@@ -10,13 +10,14 @@ In this blog you will find helpful tips, tricks, gotchas, and other examples of 
 
 ## A note concerning `package.json` and `package-lock.json`
 
-Please note that you must push your `package.json` AND `package-lock.json` files. If you do not, the deploy will fail.
+Please note that *you must push your `package.json` AND `package-lock.json` files*. If you do not, the deploy will fail.
 
 ## Tools used
 
 - git
 - github
 - github pages
+- nvm
 - Yarn
 - 11ty
 - HTML
