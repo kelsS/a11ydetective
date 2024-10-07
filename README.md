@@ -46,18 +46,21 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |  |-- util.js - Utilities used by the tasks
 |
 |-- /src/ - Your code
-|  |-- index.template.html - The wrapper around your compiled HTML that includes any external stylesheets and scripts
-|  |-- index.partial.(html|pug|haml|...) - The raw HTML input or preprocessor equivalent
-|  |-- style.(css|scss|less|...) - The raw CSS input, or preprocessor equivalent
-|  |-- script.(js|ts|coffee|...) - The raw JavaScript input, or preprocessor equivalent
+|  |-- `index.md`
+|  |-- `style.css` - The raw CSS input, or pre-processor equivalent
+|  |-- `script.js` - The raw JavaScript input, or pre-processor equivalent
 |
-|-- /dist/ - The compiled output after running `npm run build`
-|  |-- index.html
-|  |-- script.js
-|  |-- style.css
+|-- /dist/ - The compiled output after running `yarn run build`
+|  |-- `index.html`
+|  |-- `script.js`
+|  |-- `style.css`
 |
-|-- .nojekyll
-|-- .gitignore
-|-- package.json
-|-- README.md
+|-- `.nojekyll`
+|-- /.github/workflows/`11ty_build.yml` (Github Pages deploy yaml file)
+|-- `.eleventy.js` (11ty config file)
+|-- `.nvmrc` (contains node version for the project that will be used when you run `nvm use`)
+|-- `.gitignore`
+|-- `package.json`
+|-- `package-lock.json`
+|-- `README.md`
 ```
