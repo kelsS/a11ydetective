@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "A blog all about web a11y",
   "main": "index.js",
-  "build": "eleventy",
+	"scripts": {
+		"build": "yarn dlx @11ty/eleventy",
+		"start": "yarn dlx @11ty/eleventy --serve",
+    "watch": "yarn dlx @11ty/eleventy --watch",
+    "dryrun": "yarn dlx @11ty/eleventy --dryrun"
+	},
   "repository": "git@github.com:kelsS/a11ydetective.git",
   "author": "kelsS <ratherkelsey@gmail.com>",
   "license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"bugs": {
+		"url": "https://github.com/kelsS/a11ydetective/issues"
+	},
+	"homepage": "https://a11ydetective.com",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
   }
