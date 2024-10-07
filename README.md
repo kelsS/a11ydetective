@@ -8,6 +8,18 @@ Web a11y is all about making sites and applications usable to as many people as 
 
 In this blog you will find helpful tips, tricks, gotchas, and other examples of how to make a website or web application accessible for all!
 
+## Tools used
+
+- git
+- github
+- github pages
+- 11ty
+- HTML
+- Nunjucks
+- CSS
+- JS
+- Code bundler
+
 ## File structure
 
 - `.nojekyll`: *tells github pages to NOT use jekyll since this project will be using 11ty instead*
