@@ -18,7 +18,7 @@ Please note that [11ty](https://www.11ty.dev/#quick-start) requires [Node versio
 
 ## Coming from `npm` world?
 
-Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` commands in `yarn` syntax.
+Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` commands and their `yarn` equivalents.
 
 ## Tools used
 
