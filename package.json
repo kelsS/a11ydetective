@@ -6,5 +6,8 @@
   "build": "eleventy",
   "repository": "git@github.com:kelsS/a11ydetective.git",
   "author": "kelsS <ratherkelsey@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
 }

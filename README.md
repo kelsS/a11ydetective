@@ -8,9 +8,9 @@ Web a11y is all about making sites and applications usable to as many people as 
 
 In this blog you will find helpful tips, tricks, gotchas, and other examples of how to make a website or web application accessible for all!
 
-## A note concerning `package.json` and `package-lock.json`
+## A note concerning `package.json` and `yarn.lock`
 
-Please note that *you must push your `package.json` AND `package-lock.json` files*. If you do not, the deploy will fail.
+Please note that *you must push your `package.json` AND `yarn.lock` files*. If you do not, the deploy will fail.
 
 ## A note on Node and 11ty
 
@@ -27,7 +27,7 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 - github pages
 - nvm
 - Yarn
-- 11ty
+- [11ty](https://11ty.dev/docs/)
 - HTML
 - Nunjucks
 - Markdown
@@ -60,6 +60,6 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |-- `.nvmrc` - Contains node version for the project that will be used when you run `nvm use`
 |-- `.gitignore` - Used to hide things from git so they are not commited to the remote repo
 |-- `package.json` - Contains information about the project such as node dependencies, build scripts, etc...
-|-- `package-lock.json` - Lockfile for package.json
+|-- `yarn.lock` - Lockfile for package.json
 |-- `README.md` - Documentation for how to work within the repo
 ```
