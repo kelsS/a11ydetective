@@ -13,6 +13,7 @@ In this blog you will find helpful tips, tricks, gotchas, and other examples of 
 - git
 - github
 - github pages
+- Yarn
 - 11ty
 - HTML
 - Nunjucks
