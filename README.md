@@ -12,6 +12,10 @@ In this blog you will find helpful tips, tricks, gotchas, and other examples of 
 
 Please note that *you must push your `package.json` AND `package-lock.json` files*. If you do not, the deploy will fail.
 
+## A note on Node and 11ty
+
+Please note that [11ty](https://www.11ty.dev/#quick-start) requires [Node version 18 or newer](https://nodejs.org/en/about/previous-releases).
+
 ## Tools used
 
 - git
