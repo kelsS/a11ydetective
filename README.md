@@ -4,6 +4,7 @@
 
 - `.nojekyll`: *tells github pages to NOT use jekyll since this project will be using 11ty instead*
 
+```md
 /project root/ -> /a11ydetective/
 |
 |-- /build/ - Build scripts
@@ -25,3 +26,4 @@
 |-- .gitignore
 |-- package.json
 |-- README.md
+```
