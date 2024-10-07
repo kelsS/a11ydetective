@@ -16,6 +16,10 @@ Please note that *you must push your `package.json` AND `package-lock.json` file
 
 Please note that [11ty](https://www.11ty.dev/#quick-start) requires [Node version 18 or newer](https://nodejs.org/en/about/previous-releases).
 
+## Coming from `npm` world?
+
+Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` commands in `yarn` syntax.
+
 ## Tools used
 
 - git
