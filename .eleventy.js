@@ -2,6 +2,8 @@ module.exports = {
     dir: {
         input: "src",
         output: "dist",
-        layouts: 'layouts'
+        layouts: 'includes/layouts',
+        includes: "includes",
+		data: "data",
     }
 };
