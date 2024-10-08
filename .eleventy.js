@@ -1,6 +1,7 @@
 module.exports = {
     dir: {
         input: "src",
-        output: "dist"
+        output: "dist",
+        layouts: 'layouts'
     }
 };
