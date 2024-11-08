@@ -1,7 +1,7 @@
 {
   "name": "a11ydetective",
   "version": "1.0.0",
-  "description": "A blog all about web a11y",
+  "description": "A blog all about web a11y and random thoughts from a front end accessibility engineer",
   "main": "index.js",
 	"scripts": {
 		"build": " rm -r ./dist ; exec eleventy",
