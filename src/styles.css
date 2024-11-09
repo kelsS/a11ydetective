@@ -1,0 +1,84 @@
+/**
+* App styles
+*/
+
+/* Colors */
+:root {
+    --pink: #e75480;
+    --purple: purple;
+    --magenta: magenta;
+}
+
+/* !important is required */
+[hidden] {
+    display: none !important;
+}
+
+/* Screen reader only text */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* Why we need this rule: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
+}
+
+#app {
+    height: 100vh;
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    align-self: stretch;
+    background-color: var(--pink);
+}
+
+main {
+    grid-area: main;
+    background-color: var(--purple);
+    overflow: auto;
+    padding: 16px 5px 10px 5px;
+}
+
+footer {
+    grid-area: footer;
+    align-self: stretch;
+    background-color: var(--magenta);
+}
+
+.layout-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+  

@@ -1,0 +1,18 @@
+---
+layout: 'base.njk'
+title: Welcome A11y Detectives!
+---
+
+<h1>{{ title }}</h1>
+
+<h2>Excited you are here!</h2>
+
+<p>
+    Here is an example paragraph. This is more text in the paragraph.
+</p>
+
+<section id="featured-blog-post">
+    {%- for post in collections.featured | reverse -%}
+        {% include 'blog-post-snippet.njk' %}
+    {%- endfor -%}
+</section>

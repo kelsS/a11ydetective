@@ -46,3 +46,23 @@ Disallow: /
 User-agent: OpenAI
 Disallow: /
 
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: AmazonBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: DuckAssistBot
+Disallow: /
