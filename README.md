@@ -46,6 +46,7 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |-- /src/ - The source code
 |-- /src/assets/ - project assets such as images
 |-- /src/blog/ - blog posts written as `md` files
+|-- /src/projects/ - project posts written as `md` files
 |-- /src/includes/ - project templates
 |-- `app.js` - The raw JavaScript input, or pre-processor equivalent
 |-- `blog.njk` - The blog page template
