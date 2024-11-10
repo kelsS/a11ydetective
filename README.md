@@ -37,6 +37,10 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 
 ## File structure
 
+```js
+// @todo: finish adding folder structure and files to readme
+```
+
 ```md
 /project root/ -> /a11ydetective/
 |
@@ -82,6 +86,10 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 - You can delete `dist` only with `yarn run clean`
 
 ## Local development urls
+
+```js
+// @todo: finish adding folder structure and files to readme
+```
 
 - root: `http://localhost:8080/`
 - blog: `http://localhost:8080/blog/`
