@@ -81,3 +81,13 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 
 - You can delete `dist` and rebiuld with the following command `yarn run build`
 - You can delete `dist` only with `yarn run clean`
+
+## Local development urls
+
+- root: `http://localhost:8080/`
+- blog: `http://localhost:8080/blog/`
+
+## Live site urls
+
+- root: `https://a11ydetective.com`
+- blog: `https://a11ydetective.com/blog/`
