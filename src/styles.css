@@ -160,10 +160,13 @@ button {
 
 a {
   color: var(--black, #0f030f);
-  text-decoration: underline;
+  /* text-decoration: double;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px; */
   font-weight: bold;
   padding: 16px 5px 16px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 
@@ -176,8 +179,10 @@ button {
 a:focus,
 a:hover,
 button:focus,
-button:hover {
-    outline: 2px double var(--green);
+button:hover,
+.new-tab:focus,
+.new-tab:hover {
+    outline: 10px double var(--green);
 }
 
 a {
@@ -230,14 +235,13 @@ ul.custom-list {
     color: var(--purple, #8b7499);
 }
 
-.made-with-love a:focus,
-.made-with-love a:hover {
-    outline: 2px double var(--green);
-}
-
 .small-image {
     width: 300px;
     height: 100%;
+}
+
+.new-tab {
+    text-decoration: none;
 }
 
 .new-tab:after {
@@ -246,6 +250,14 @@ ul.custom-list {
     position: relative;
     font-size: 16px;
     margin-left: -8px;
+}
+
+.link-icon:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c1";
+    position: relative;
+    font-size: 16px;
+    margin-left: 8px;
 }
 
 #copyright-info {
@@ -262,4 +274,5 @@ ul.custom-list {
 
 #main-nav a {
     color: var(--green);
+    text-decoration: none;
 }
