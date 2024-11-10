@@ -63,3 +63,21 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |-- `yarn.lock` - Lockfile for package.json
 |-- `README.md` - Documentation for how to work within the repo
 ```
+
+## Commands
+
+- `nvm use`: switches the node version to whatever is in the `.nvmrc`
+- `yarn install`: installs project dependencies
+- `yarn run build`: destroys dist and rebuild dist
+- `yarn start`: destroys dist and starts 11ty and the local server
+- `yarn run clean`: destroys dist
+
+## Project setup steps
+
+1. Install the repo from github
+2. Navigate to the git repository you just installed
+3. Run the following command in your terminal of choice `yarn install`
+4. Run the following command in your terminal of choice `yarn start`
+
+- You can delete `dist` and rebiuld with the following command `yarn run build`
+- You can delete `dist` only with `yarn run clean`
