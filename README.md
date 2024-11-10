@@ -40,28 +40,26 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 ```md
 /project root/ -> /a11ydetective/
 |
-|-- /build/ - Build scripts
-|  |-- gulpfile.js - The tasks for the main build process
-|  |-- util.js - Utilities used by the tasks
-|
-|-- /src/ - Your code
-|  |-- `index.md`
-|  |-- `style.css` - The raw CSS input, or pre-processor equivalent
-|  |-- `script.js` - The raw JavaScript input, or pre-processor equivalent
-|
-|-- /dist/ - The compiled output after running `yarn run build`
-|  |-- `index.html`
-|  |-- `script.js`
-|  |-- `style.css`
-|
-|-- `.nojekyll` - Tells Github pages to NOT use Jekyll since this project will be using 11ty instead
-|-- /.github/workflows/`11ty_build.yml` - Github Pages deploy yaml file
+|-- /.github/ - Stores the `11ty_build.yml`
+|-- /dist/ - The compiled production ready output after running `yarn run build`
+|-- /node_modules/ - The installed project dependencies after running `yarn install`
+|-- /src/ - The source code
+|-- /src/assets/ - project assets such as images
+|-- /src/blog/ - blog posts written as `md` files
+|-- /src/includes/ - project templates
+|-- `app.js` - The raw JavaScript input, or pre-processor equivalent
+|-- `blog.njk` - The blog page template
+|-- `index.njk` - The home page template
+|-- `robots.txt` - The file disallowing scrapping from AI scrapers
+|-- `styles.css` - The raw CSS input, or pre-processor equivalent
 |-- `.eleventy.js` - 11ty config file
-|-- `.nvmrc` - Contains node version for the project that will be used when you run `nvm use`
 |-- `.gitignore` - Used to hide things from git so they are not commited to the remote repo
+|-- `.nojekyll` - Tells Github pages NOT to use Jekyll since this project will be using 11ty instead
+|-- `.nvmrc` - Contains node version for the project that will be used when you run `nvm use`
+|-- `DESIGN-PATTERNS.md` - Documentation notes on programming design patterns
 |-- `package.json` - Contains information about the project such as node dependencies, build scripts, etc...
-|-- `yarn.lock` - Lockfile for package.json
 |-- `README.md` - Documentation for how to work within the repo
+|-- `yarn.lock` - Lockfile for package.json
 ```
 
 ## Commands
