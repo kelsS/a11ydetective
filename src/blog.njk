@@ -5,7 +5,7 @@ title: Blog
 
 <h2>Recent blog posts</h2>
 
-<ul>
+<ul class="list-unstyled">
     {%- for post in collections.blog | reverse -%}
         {% include 'blog-post-snippet.njk' %}
     {%- endfor -%}

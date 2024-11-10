@@ -1,12 +1,14 @@
-<li class="list-unstyled">
-    <article>
-        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-        <h3>{{ post.data.title }}</h3>
-        <p>by <span>{{ post.data.author }}</span></p>
-        <p>
-            <span>{{ post.data.date | postDate }}</span>
-        </p>
-        <p>{{ post.data.description }}</p>
-        <a class="link-icon" href="{{ post.url }}">Continue reading</a>
+<li class="list-unstyled d-flex">
+    <article class="card_projector-slide d-flex">
+        <div class="img-container">
+            <img class="md-image" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+        </div>
+
+        <div class="card-slide-content">
+            <h3>{{ post.data.title }}</h3>
+            <p>by <span>{{ post.data.author }}</span> at <span>{{ post.data.date | postDate }}</span></p>
+            <p>{{ post.data.description }}</p>
+            <a class="link-icon" href="{{ post.url }}">Continue reading</a>
+        </div>
     </article>
 </li>

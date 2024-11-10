@@ -1,11 +1,15 @@
-<li class="list-unstyled">
-    <article>
-        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+<li class="list-unstyled d-flex">
+    <article class="card d-flex">
+        <img class="md-image" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+
+        <hr aria-hidden="true">
+
         <h3>{{ post.data.title }}</h3>
-        <p>by <span>{{ post.data.author }}</span></p>
-        <p>
-            <span>{{ post.data.date | postDate }}</span>
-        </p>
+
+        <hr aria-hidden="true">
+
+        <p>by <span>{{ post.data.author }}</span> at <span>{{ post.data.date | postDate }}</span></p>
+        
         <p>{{ post.data.description }}</p>
         <a class="link-icon" href="{{ post.url }}">Continue reading</a>
     </article>
