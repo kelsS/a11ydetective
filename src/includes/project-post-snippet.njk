@@ -1,0 +1,12 @@
+<li>
+    <article>
+        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+        <h3>{{ post.data.title }}</h3>
+        <p>by <span>{{ post.data.author }}</span></p>
+        <p>
+            <span>{{ post.data.date | postDate }}</span>
+        </p>
+        <p>{{ post.data.description }}</p>
+        <a href="{{ post.url }}">Continue reading</a>
+    </article>
+</li>

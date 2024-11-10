@@ -1,12 +1,12 @@
 ---
 layout: 'blog-post.njk'
-title: Featured - First blog post
+title: Blog post - Second blog post
 author: Kelsey S.
 date: 2024-11-08
 image: /assets/blog/snarling-kitty.webp
 imageAlt: Example alt text
 figCaption: Example fig caption
-tags: ["post", "featured", "blog"]
+tags: ["post", "blog"]
 description: here is an example blog post description
 ---
 

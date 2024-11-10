@@ -85,8 +85,14 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 
 - root: `http://localhost:8080/`
 - blog: `http://localhost:8080/blog/`
+- projects: `http://localhost:8080/projects/`
+- projects: `http://localhost:8080/resume/`
+- playground: `http://localhost:8080/playground/`
 
 ## Live site urls
 
 - root: `https://a11ydetective.com`
 - blog: `https://a11ydetective.com/blog/`
+- projects: `https://a11ydetective.com/projects/`
+- resume: `https://a11ydetective.com/resume`
+- playground: `https://a11ydetective.com/playground`

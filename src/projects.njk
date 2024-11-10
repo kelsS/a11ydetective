@@ -1,0 +1,18 @@
+---
+layout: 'base.njk'
+title: Welcome to the Projects portion of today's programming!
+---
+
+<h1>{{ title }}</h1>
+
+<h2>Fresh hot projects right out of the oven, oh my!</h2>
+
+<p>
+    Here is an example paragraph. This is more text in the paragraph.
+</p>
+
+<section id="project-posts">
+    {%- for post in collections.project | reverse -%}
+        {% include 'project-post-snippet.njk' %}
+    {%- endfor -%}
+</section>
