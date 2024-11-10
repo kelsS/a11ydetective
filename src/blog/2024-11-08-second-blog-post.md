@@ -1,6 +1,6 @@
 ---
 layout: 'project-post.njk'
-title: Project - Second blog post
+title: fEATURED - Project - Second projects post
 author: Kelsey S.
 date: 2024-11-08
 image: /assets/blog/snarling-kitty.webp

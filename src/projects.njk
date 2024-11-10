@@ -12,7 +12,9 @@ title: Welcome to the Projects portion of today's programming!
 </p>
 
 <section id="project-posts">
-    {%- for post in collections.project | reverse -%}
-        {% include 'project-post-snippet.njk' %}
-    {%- endfor -%}
+    <ul class="list-unstyled">
+        {%- for post in collections.project | reverse -%}
+            {% include 'project-post-snippet.njk' %}
+        {%- endfor -%}
+    </ul>
 </section>

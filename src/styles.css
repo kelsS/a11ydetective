@@ -93,13 +93,13 @@ footer {
     grid-area: footer;
     align-self: stretch;  
     border-top: 3px solid var(--green, #a2b883);
-    border-radius: 0px 0px 5px 5px;;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.header,
-.footer {
-    background-color: var(--purple, #8b7499);
-    color: var(--black, #0f030f);
+header,
+footer {
+    background-color: var(--black, #0f030f);
+    color: var(--purple, #8b7499);
 }
 
 .layout-center-column {
@@ -131,8 +131,8 @@ h2 {
 }
 
 p {
-  font-size: 16px;
-  color: var(--green, #a2b883);
+  font-size: 16px;    
+  color: var(--black, #0f030f);
 }
 
 .space-top {
@@ -159,8 +159,8 @@ button {
 }
 
 a {
-  color: var(--green, #a2b883);
-  text-decoration: none;
+  color: var(--black, #0f030f);
+  text-decoration: underline;
   font-weight: bold;
   padding: 16px 5px 16px;
   border-radius: 5px;
@@ -177,12 +177,11 @@ a:focus,
 a:hover,
 button:focus,
 button:hover {
-  outline-color: var(--green, #a2b883);
+    outline: 2px double var(--green);
 }
 
 a {
   display: inline-block;
-  display: var(--purple, #8b7499);
 }
 
 button {
@@ -223,16 +222,17 @@ ul.custom-list {
     font-size: 24px;
     text-align: center;
     text-shadow: 2px 7px 10px rgb(15 3 15 / 50%);
-    background-color: var(--purple, #8b7499);
+    color: var(--purple, #8b7499);
+    
 }
 
 .made-with-love a {
-    color: var(--black, #0f030f);
+    color: var(--purple, #8b7499);
 }
 
 .made-with-love a:focus,
 .made-with-love a:hover {
-    outline-color: var(--black, #0f030f);
+    outline: 2px double var(--green);
 }
 
 .small-image {
@@ -246,4 +246,20 @@ ul.custom-list {
     position: relative;
     font-size: 16px;
     margin-left: -8px;
+}
+
+#copyright-info {
+    color: var(--purple, #8b7499);
+}
+
+#main-nav {
+    display: flex;
+}
+
+#main-nav ul {
+    display: flex;
+}
+
+#main-nav a {
+    color: var(--green);
 }

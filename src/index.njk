@@ -12,7 +12,9 @@ title: Welcome A11y Detectives!
 </p>
 
 <section class="featured-blog-post">
-    {%- for post in collections.featured | reverse -%}
-        {% include 'blog-post-snippet.njk' %}
-    {%- endfor -%}
+    <ul class="list-unstyled">
+        {%- for post in collections.featured | reverse -%}
+            {% include 'blog-post-snippet.njk' %}
+        {%- endfor -%}
+    </ul>
 </section>
