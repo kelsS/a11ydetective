@@ -7,6 +7,19 @@
     --pink: #e75480;
     --purple: purple;
     --magenta: magenta;
+    --bg-green: #ccffdd;
+  --faint-green: #99ddbb4d;
+  --graph-line-green: #99ddbb;
+  --pastel-plum: #dfc4df;
+  --pastel-pink: #ffe3ff;
+  --lt-green: #daffe7;
+  --lt-green-hsl: hsl(141, 100%, 93%, 0.6);
+  --med-green: #ccffdd;
+  --drk-green: #b9ebca;
+  --black: #000;
+  --black-rgb: rgb(0, 0, 0);
+  --white: #fff;
+  --white-rgb: rgb(255, 255, 255);
 }
 
 /* !important is required */
