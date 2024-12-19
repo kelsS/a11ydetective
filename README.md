@@ -63,3 +63,11 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |-- `yarn.lock` - Lockfile for package.json
 |-- `README.md` - Documentation for how to work within the repo
 ```
+
+## Getting started
+
+1. Open your preferred terminal (all commands will be ran in the terminal)
+2. Run`nvm use` to make sure you are using the correct node version for the project
+3. Run `yarn` to install the node modules
+4. Run `yarn start` to run the local developement setup
+5. Navigate to the project url in a browser - http://localhost:8081/
