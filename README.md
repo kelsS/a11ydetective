@@ -163,3 +163,5 @@ console.log(PI); // 3.14159
   - [] Read [Even Better JS Bundling in Eleventy](https://medium.com/@brettdewoody/even-better-js-bundling-in-eleventy-5309d4e7109f)
   - [] Watch [Bundle JavaScript for 11ty with esbuild](https://youtu.be/K3ymW_2oRL8?si=g4rmRUnHA-SLBoBK)
   - [] Add "favorite things page" ie. fav video game, fave online course, fave movies, etc..
+  - [] - Make a free clawberta clone
+  
