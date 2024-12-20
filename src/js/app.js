@@ -3,9 +3,6 @@
  */
 console.log('Hello from App JS');
 
-import { search } from '../js/search.js';
-
-
 // @todo: move to better location within project
 // remove jello class after a few seconds of hovering
 // @todo: figure out performance
@@ -35,6 +32,6 @@ elements.forEach((item) => {
     return;
 }
   
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
     removeJello();
 });
