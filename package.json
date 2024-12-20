@@ -3,22 +3,24 @@
   "version": "1.0.0",
   "description": "A blog all about web a11y and random thoughts from a front end accessibility engineer",
   "main": "index.js",
-	"scripts": {
-		"build": " rm -r ./dist ; exec eleventy",
-		"start": "rm -r ./dist ; exec eleventy --serve",
+  "scripts": {
+    "build": " rm -r ./dist ; exec eleventy",
+    "start": "rm -r ./dist ; exec eleventy --serve",
     "clean": "rm -r ./dist"
-	},
+  },
   "repository": "git@github.com:kelsS/a11ydetective.git",
   "author": "kelsS <ratherkelsey@gmail.com>",
   "license": "MIT",
-	"engines": {
-		"node": ">=18"
-	},
-	"bugs": {
-		"url": "https://github.com/kelsS/a11ydetective/issues"
-	},
-	"homepage": "https://a11ydetective.com/",
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/kelsS/a11ydetective/issues"
+  },
+  "homepage": "https://a11ydetective.com/",
+  "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "algoliasearch": "^5.18.0"
   }
 }

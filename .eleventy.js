@@ -1,12 +1,14 @@
-const { DateTime } = require('luxon');
+import { DateTime } from 'luxon';
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
     // Put robots.txt in root
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 
     eleventyConfig.addPassthroughCopy({ 'src/styles.css': '/css/styles.css' });
 
-    eleventyConfig.addPassthroughCopy({ 'src/app.js': '/js/app.js' });
+    eleventyConfig.addPassthroughCopy({ 'src/js/app.js': '/js/app.js' });
+
+    eleventyConfig.addPassthroughCopy({ 'src/js/search.js': '/js/search.js' });
 
     eleventyConfig.addPassthroughCopy({ 'src/assets': '/assets' });
 

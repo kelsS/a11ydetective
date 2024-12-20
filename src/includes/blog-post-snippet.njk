@@ -1,12 +1,10 @@
-<li>
-    <article>
-        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-        <h3>{{ post.data.title }}</h3>
-        <p>by <span>{{ post.data.author }}</span></p>
-        <p>
-            <span>{{ post.data.date | postDate }}</span>
-        </p>
-        <p>{{ post.data.description }}</p>
-        <a href="{{ post.url }}">Continue reading</a>
-    </article>
-</li>
+<article class="blog-post-snippet" arialabelledby="blog-post-title">
+    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+    <h3 id="blog-post-title">{{ post.data.title }}</h3>
+    <p>by <span>{{ post.data.author }}</span></p>
+    <p>
+        <span>{{ post.data.date | postDate }}</span>
+    </p>
+    <p>{{ post.data.description }}</p>
+    <a href="{{ post.url }}">Continue reading <span class="visually-hidden">{{ post.data.title }}</span></a>
+</article>

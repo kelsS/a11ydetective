@@ -3,7 +3,10 @@ layout: 'base.njk'
 title: Welcome A11y Detectives!
 ---
 
-<h1>{{ title }}</h1>
+<div class="txt-linear-art-box">
+    <h1 class="txt-lineart">
+        <span class="tapered">{{ title }}</span></h1>
+</div>
 
 <h2>Excited you are here!</h2>
 
@@ -15,4 +18,20 @@ title: Welcome A11y Detectives!
     {%- for post in collections.featured | reverse -%}
         {% include 'blog-post-snippet.njk' %}
     {%- endfor -%}
+</section>
+
+<section class="full">
+    {% include 'button-snippet.njk' %}
+
+    {% include 'body-text-link-snippet.njk' %}
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi maxime accusantium. Quasi, laborum, asperiores aspernatur commodi autem inventore neque, <a href="#" class="interactive content-link jello">Hi I am an in content link</a> ipsa quidem fugit officia ex sed at delectus nam impedit.</p>
+</section>
+
+<section>
+    {% include 'input-snippet.njk' %}
+
+    {% include 'textarea-snippet.njk' %}
+
+    {% include 'custom-list-snippet.njk' %}
 </section>
