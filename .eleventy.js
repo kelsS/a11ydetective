@@ -1,6 +1,6 @@
-import { DateTime } from 'luxon';
+const { DateTime } = require('luxon');
 
-export default function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
     // Put robots.txt in root
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 

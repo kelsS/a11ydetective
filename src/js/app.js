@@ -35,6 +35,6 @@ elements.forEach((item) => {
     return;
 }
   
-// window.addEventListener("DOMContentLoaded", (event) => {
-//     removeJello();
-// });
+window.addEventListener("DOMContentLoaded", (event) => {
+    removeJello();
+});

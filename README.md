@@ -79,6 +79,22 @@ Check out this [helpful cheatsheet](https://devhints.io/yarn) showing `npm` comm
 |-- `README.md` - Documentation for how to work within the repo
 ```
 
+## Import JS files into other JS files using CommonJS
+
+```js
+// .eleventy.js
+const myModule = require("./path/to/myModule.js");
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addFilter("myFilter", myModule.myFunction);
+};
+```
+
+```html
+<!-- Your template file -->
+{{ "Hello" | myFilter }}
+```
+
 ## ES module example
 
 /math.js/ (module)
@@ -115,7 +131,7 @@ console.log(PI); // 3.14159
 2. Run`nvm use` to make sure you are using the correct node version for the project
 3. Run `yarn` to install the node modules
 4. Run `yarn start` to run the local developement setup
-5. Navigate to the project url in a browser - http://localhost:8081/
+5. Navigate to the project url in a browser - http://localhost:8080/
 
 ## @todo
 

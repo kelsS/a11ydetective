@@ -18,7 +18,6 @@
     "url": "https://github.com/kelsS/a11ydetective/issues"
   },
   "homepage": "https://a11ydetective.com/",
-  "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "algoliasearch": "^5.18.0"
