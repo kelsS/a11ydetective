@@ -17,11 +17,11 @@ elements.forEach((item) => {
 
             event.target.classList.remove("jello");
 
-            console.log("Delayed for 3 second.");
+            console.log("Delayed for 1 second.");
 
             return;
 
-        }, "3000");
+        }, "1000");
 
             return;
         });

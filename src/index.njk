@@ -3,10 +3,7 @@ layout: 'base.njk'
 title: Welcome A11y Detectives!
 ---
 
-<div class="txt-linear-art-box">
-    <h1 class="txt-lineart">
-        <span class="tapered">{{ title }}</span></h1>
-</div>
+<h1 class="highlight">{{ title }}</h1>
 
 <h2>Excited you are here!</h2>
 
@@ -29,9 +26,18 @@ title: Welcome A11y Detectives!
 </section>
 
 <section>
+    <h2>Controls</h2>
+
     {% include 'input-snippet.njk' %}
 
     {% include 'textarea-snippet.njk' %}
 
     {% include 'custom-list-snippet.njk' %}
+
+</section>
+
+<section>
+    <h2>Code</h2>
+
+    {% include 'code-snippet.njk' %}
 </section>

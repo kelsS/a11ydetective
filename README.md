@@ -180,3 +180,4 @@ console.log(PI); // 3.14159
   - [] Watch [Bundle JavaScript for 11ty with esbuild](https://youtu.be/K3ymW_2oRL8?si=g4rmRUnHA-SLBoBK)
   - [] Add "favorite things page" ie. fav video game, fave online course, fave movies, etc..
   - [] Make a free clawberta clone
+  - [] Try [tailwind](https://tailwindcss.com/docs/installation)

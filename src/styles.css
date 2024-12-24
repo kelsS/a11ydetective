@@ -4,18 +4,25 @@
 
 /* Colors */
 :root {
-  --pink: #e75480;
+  --drk-green: #07641b;
+  --med-green: #148d36;
+  --lt-green: #148d36;
+  --drk-purple: #520970;
+  --med-purple: #8619a6;
+  --lt-purple: #b186c5;
+
+  /* --pink: #e75480;
   --purple: purple;
   --magenta: magenta;
   --bg-green: #ccffdd;
   --faint-green: #99ddbb4d;
   --graph-line-green: #99ddbb;
   --pastel-plum: #dfc4df;
-  --pastel-pink: #ffe3ff;
-  --lt-green: #daffe7;
-  --lt-green-hsl: hsl(141, 100%, 93%, 0.6);
-  --med-green: #ccffdd;
-  --drk-green: #b9ebca;
+  --pastel-pink: #ffe3ff; */
+  /* --lt-green: #daffe7; */
+  /* --lt-green-hsl: hsl(141, 100%, 93%, 0.6); */
+  /* --med-green: #ccffdd;
+  --drk-green: #b9ebca; */
   --black: #000;
   --black-rgb: rgb(0, 0, 0);
   --white: #fff;
@@ -23,12 +30,9 @@
 }
 
 html {
-  background-color: var(--bg-green);
-  background-image: linear-gradient(
-      var(--graph-line-green) 2px,
-      transparent 2px
-    ),
-    linear-gradient(90deg, var(--graph-line-green) 2px, transparent 2px),
+  background-color: var(--med-green);
+  background-image: linear-gradient(var(--drk-green) 2px, transparent 2px),
+    linear-gradient(90deg, var(--drk-green) 2px, transparent 2px),
     linear-gradient(rgba(153, 221, 187, 0.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(153, 221, 187, 0.3) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 10px 10px, 10px 10px;
@@ -133,12 +137,17 @@ html {
 #app {
   height: 100vh;
   margin: 0; /* prevents scrollbars */
-  font-family: 'JetBrains Mono', serif;
+  /* font-family: 'JetBrains Mono', serif;
   font-weight: bold;
   font-optical-sizing: auto;
   font-weight: normal;
-  font-style: normal;
+  font-style: normal; */
   line-height: 1.5;
+  font-family: 'Open Sans', serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
 }
 
 .container {
@@ -198,18 +207,20 @@ footer {
   text-decoration: none;
   display: flex;
   align-items: center;
-  background-color: var(--pastel-plum);
+  background-color: var(--drk-purple);
   transition: all 250ms ease-out;
 }
 
-.logo .txt-lineart {
+.logo-txt {
   font-size: 20px;
   font-weight: 900;
+  color: var(--white);
 }
 
 .logo:focus,
 .logo:hover {
-  outline: 4px dotted var(--black);
+  background-color: var(--med-purple);
+  outline: 4px dotted var(--white);
 }
 
 nav {
@@ -273,7 +284,7 @@ p {
   line-height: 1.5;
   font-size: 16px;
   padding: 16px 32px;
-  background-color: var(--lt-green-hsl);
+  background-color: var(--lt-green);
   border-radius: 172px 30px 181px 13px / 36px 181px 46px 249px;
 }
 
@@ -286,8 +297,34 @@ p {
   font-style: normal;
 }
 
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 300 to 800 */
+.open-sans-default > {
+  font-family: 'Open Sans', serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.permanent-marker-regular {
+  font-family: 'Permanent Marker', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+code {
+  font-family: 'JetBrains Mono', serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   margin-bottom: 32px;
+  font-family: 'Permanent Marker', serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 span,
@@ -300,9 +337,9 @@ h2 span {
 header,
 footer {
   padding: 16px 32px;
-  border: 3px solid var(--graph-line-green);
+  border: 3px solid var(--med-green);
   border-radius: 10px 10px 122px 18px/11px 97px 7px 448px;
-  background-color: var(--lt-green-hsl);
+  background-color: var(--lt-green);
 }
 
 /* grid container settings */
@@ -532,20 +569,6 @@ a img {
   background-position: 100% 98%;
 }
 
-.txt-linear-art-box {
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-}
-
-.txt-lineart {
-  /* PREPARING: colors */
-  color: var(--black);
-  background-color: transparent;
-  /* Making LINEART effect*/
-  text-shadow: 3px 3px 0px var(--white), 4px 4px 0px var(--black);
-}
-
 /* Paper effect – slightly raised off background */
 .btn-raise {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -659,4 +682,19 @@ a img {
 
 .fixed-width {
   max-width: 35rem;
+}
+
+.slanted-section {
+  background-size: 500px;
+  padding-top: 180px;
+  padding-bottom: 80px;
+  clip-path: polygon(0px 100px, 100% 0px, 100% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.highlight {
+  /* background-image: url(/static/blackgrit-6a2d636….png); */
+  background-color: var(--lt-purple);
+  background-size: 500px;
+  padding: 5px;
 }
