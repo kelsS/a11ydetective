@@ -104,7 +104,10 @@
     <textarea placeholder="resizable text area" id="address" class="interactive jello" autocomplete="street-address"></textarea>
 </div>
 
-    <ul class="list-unstyled has-background pad-32-64">
+    <!-- @note: We need role list on the ul bc of a VoiceOver bug -->
+<!-- @see: https://gerardkcohen.me/writing/2017/voiceover-list-style-type.html -->
+<!-- @see: https://tailwindcss.com/docs/preflight#accessibility-considerations -->
+<ul role="list" class="list-unstyled has-background pad-32-64">
     <li class="center">
         <!-- @todo: figure out how to remove margin spacing when img is deleted -->
         <div class="pos-rel marg-32">
@@ -122,7 +125,7 @@
     </li>
     <li>
         <p>even more facts</p>
-        <ul class="custom-list indent">
+        <ul role="list" class="custom-list indent">
             <li>They can tell who their owners are!</li>
             <li>They know if they're owners around or not!</li>
         </ul>
