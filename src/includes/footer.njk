@@ -1,5 +1,10 @@
 <footer tabindex="-1" class="layout-center-column">
-    <h2>This is the <code>footer</code> content</h2>
+    <div>
+        <h2>This is the <code>footer</code> content</h2>
+        <nav aria-label="footer">
+            <a href="#" class="content-link center jello">styleguide <span aria-hidden="true" class="marg-left-8">👽</span></a>
+        </nav>
+    </div>
 
-    <p>Copyright {% year %}</p>
+    <p class="footer-meta">Copyright<span class="year" aria-hidden="true">{% include 'copyright-svg.njk' %}</span> {% year %}</p>
 </footer>

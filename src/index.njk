@@ -3,11 +3,11 @@ layout: 'base.njk'
 title: Welcome A11y Detectives!
 ---
 
-<h1>{{ title }}</h1>
+<h1 class="highlight">{{ title }}</h1>
 
 <h2>Excited you are here!</h2>
 
-<p>
+<p class="fixed-width has-background">
     Here is an example paragraph. This is more text in the paragraph.
 </p>
 
@@ -15,4 +15,31 @@ title: Welcome A11y Detectives!
     {%- for post in collections.featured | reverse -%}
         {% include 'blog-post-snippet.njk' %}
     {%- endfor -%}
+</section>
+
+<section class="full txt-content">
+    {% include 'button-snippet.njk' %}
+
+    {% include 'body-text-link-snippet.njk' %}
+
+    <p class="fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi maxime accusantium. Quasi, laborum, asperiores aspernatur commodi autem inventore neque, <a href="#" class="content-link jello">Hi I am an in content link</a> ipsa quidem fugit officia ex sed at delectus nam impedit.</p>
+
+    <p class="fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi maxime accusantium. Quasi, laborum, asperiores aspernatur commodi autem inventore neque, <a href="#" class="content-link jello">Hi I am an in content link</a> ipsa quidem fugit officia ex sed at delectus nam impedit.</p>
+</section>
+
+<section>
+    <h2>Controls</h2>
+
+    {% include 'input-snippet.njk' %}
+
+    {% include 'textarea-snippet.njk' %}
+
+    {% include 'custom-list-snippet.njk' %}
+
+</section>
+
+<section>
+    <h2>Code</h2>
+
+    {% include 'code-snippet.njk' %}
 </section>

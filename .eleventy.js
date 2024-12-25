@@ -6,7 +6,9 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ 'src/styles.css': '/css/styles.css' });
 
-    eleventyConfig.addPassthroughCopy({ 'src/app.js': '/js/app.js' });
+    eleventyConfig.addPassthroughCopy({ 'src/js/app.js': '/js/app.js' });
+
+    eleventyConfig.addPassthroughCopy({ 'src/js/search.js': '/js/search.js' });
 
     eleventyConfig.addPassthroughCopy({ 'src/assets': '/assets' });
 

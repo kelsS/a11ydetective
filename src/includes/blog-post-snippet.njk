@@ -1,12 +1,17 @@
-<li>
-    <article>
-        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-        <h3>{{ post.data.title }}</h3>
-        <p>by <span>{{ post.data.author }}</span></p>
-        <p>
-            <span>{{ post.data.date | postDate }}</span>
-        </p>
-        <p>{{ post.data.description }}</p>
-        <a href="{{ post.url }}">Continue reading</a>
-    </article>
-</li>
+<article class="blog-post-snippet fixed-width" arialabelledby="blog-post-title">
+    <div class="tape tape-1"></div>
+    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" class="sticky-note">
+    <div class="blog-meta">
+        <h3 id="blog-post-title">{{ post.data.title }}</h3>
+        <p>by <span>{{ post.data.author }} @</span></p>
+        <span>{{ post.data.date | postDate }}</span>
+
+    </div>
+    <p class="blog-post-snippet-desc">{{ post.data.description }}</p>
+    <a href="{{ post.url }}" class="content-link jello">
+        Continue reading 
+        <span class="visually-hidden">{{ post.data.title }}</span>
+        {% include 'right-arrow-svg.njk' %}
+    </a>
+    <div class="tape tape-2"></div>
+</article>
