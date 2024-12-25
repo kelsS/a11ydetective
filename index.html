@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +18,36 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/1eb9d924af.js" crossorigin="anonymous" defer></script>
+
     <!-- Scripts entry point -->
-    <script src="/js/app.js" defer></script>
+    <script type="module" src="/js/app.js" defer></script>
   </head>
   <body id="app">
     <header tabindex="-1" class="layout-center-column">
-    <nav aria-label="main nav">
+    <nav aria-label="main">
         <ul>
             <li>
-                <a href="/">Home</a>
+                <!-- @todo: design handwritten logo image -->
+                <a href="/" class="logo jello">
+
+                    <span class="logo-txt">a11y detective</span>
+
+                    <span class="icon" aria-hidden="true">♿🔎</span>
+                </a>
             </li>
             <li>
-                <a href="/blog/">Blog</a>
+                <a href="/" class="content-link jello">home <span class="icon" aria-hidden="true">🏠</span></a>
+            </li>
+            <li>
+                <a href="/blog/" class="content-link jello">braindump <span class="icon" aria-hidden="true">🧠</span></a>
+            </li>
+            <li>
+                <a href="#" class="content-link jello">projects <span class="icon" aria-hidden="true">📁</span></a>
+            </li>
+            <li>
+                <a href="#" class="content-link jello">resume <span class="icon" aria-hidden="true">📜</span></a>
             </li>
         </ul>
     </nav>
@@ -37,32 +55,117 @@
 
     <main tabindex="-1" class="layout-center-column">
       
-<h1>Welcome A11y Detectives!</h1>
+<h1 class="highlight">Welcome A11y Detectives!</h1>
 
 <h2>Excited you are here!</h2>
 
-<p>
+<p class="fixed-width has-background">
     Here is an example paragraph. This is more text in the paragraph.
 </p>
 
-<section id="featured-blog-post"><li>
-    <article>
-        <img src="/assets/blog/snarling-kitty.webp" alt="Example alt text">
-        <h3>First blog post</h3>
-        <p>by <span>Kelsey S.</span></p>
-        <p>
-            <span>Nov 8, 2024</span>
-        </p>
-        <p>here is an example blog post description</p>
-        <a href="/blog/2024-11-08-first-blog-post/">Continue reading</a>
-    </article>
-</li></section>
+<section id="featured-blog-post"><article class="blog-post-snippet fixed-width" arialabelledby="blog-post-title">
+    <div class="tape tape-1"></div>
+    <img src="/assets/blog/snarling-kitty.webp" alt="Example alt text" class="sticky-note">
+    <div class="blog-meta">
+        <h3 id="blog-post-title">First blog post</h3>
+        <p>by <span>Kelsey S. @</span></p>
+        <span>Nov 8, 2024</span>
+
+    </div>
+    <p class="blog-post-snippet-desc">here is an example blog post description</p>
+    <a href="/blog/2024-11-08-first-blog-post/" class="content-link jello">
+        Continue reading 
+        <span class="visually-hidden">First blog post</span>
+        <svg aria-hidden="true" focusable="false" class="right-arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+    </a>
+    <div class="tape tape-2"></div>
+</article></section>
+
+<section class="full txt-content">
+    <button class="default-btn btn-raise jello">Hi I am a button</button>
+
+    <a href="#" class="content-link jello">Hi I am an in content link</a>
+
+    <p class="fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi maxime accusantium. Quasi, laborum, asperiores aspernatur commodi autem inventore neque, <a href="#" class="content-link jello">Hi I am an in content link</a> ipsa quidem fugit officia ex sed at delectus nam impedit.</p>
+
+    <p class="fixed-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi maxime accusantium. Quasi, laborum, asperiores aspernatur commodi autem inventore neque, <a href="#" class="content-link jello">Hi I am an in content link</a> ipsa quidem fugit officia ex sed at delectus nam impedit.</p>
+</section>
+
+<section>
+    <h2>Controls</h2>
+
+    <div class="txt-input">
+    <label for="name">Name</label>
+    <input id="name" class="interactive jello" placeholder="name" type="text" autocomplete="name">
+</div>
+
+    <div class="txt-area">
+    <label for="address">Enter your address</label><br>
+    <textarea placeholder="resizable text area" id="address" class="interactive jello" autocomplete="street-address"></textarea>
+</div>
+
+    <ul class="list-unstyled has-background pad-32-64">
+    <li class="center">
+        <!-- @todo: figure out how to remove margin spacing when img is deleted -->
+        <div class="pos-rel marg-32">
+            <div class="tape tape-1"></div>
+            <img class="sticky-note marg-32" src="https://live.staticflickr.com/8155/7666981476_338f6c89a3_b.jpg" alt="Pink axolotl up close." class="sticky-note">
+            <div class="tape tape-2"></div>
+        </div>
+    </li>
+    <li>
+        <h3>steps to learn more about axolotls</h3>
+        <ol class="indent">
+            <li>research the species.</li>
+            <li>find interesting facts.</li>
+        </ol>
+    </li>
+    <li>
+        <p>even more facts</p>
+        <ul class="custom-list indent">
+            <li>They can tell who their owners are!</li>
+            <li>They know if they're owners around or not!</li>
+        </ul>
+    </li>
+</ul>
+
+</section>
+
+<section>
+    <h2>Code</h2>
+
+    <div class="code-block">
+
+    <h2>Code block with <code>pre</code> tag</h2>
+    <pre>
+        <code>
+            const x = 1
+            const y = 2
+
+            x + y // 3
+        </code>
+    </pre>
+
+    <h2>Code block no <code>pre</code> tag</h2>
+    <code>
+        const x = 1
+        const y = 2
+
+        x + y // 3
+    </code>
+</div>
+</section>
     </main>
 
     <footer tabindex="-1" class="layout-center-column">
-    <h2>This is the <code>footer</code> content</h2>
+    <div>
+        <h2>This is the <code>footer</code> content</h2>
+        <nav aria-label="footer">
+            <a href="#" class="content-link center jello">styleguide <span aria-hidden="true" class="marg-left-8">👽</span></a>
+        </nav>
+    </div>
 
-    <p>Copyright 2024</p>
+    <p class="footer-meta">Copyright<span class="year" aria-hidden="true"><svg aria-hidden="true" focusable="false" class="copyright" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 534 534"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg></span> 2024</p>
 </footer>
   </body>
 </html>
